@@ -1,0 +1,179 @@
+/* 1/ Les Listes de sélecteurs-----------------------------------------*/
+
+p,
+span {
+  /*Déclarations CSS s'applique à plusieurs éléments distincts, */
+}
+
+/*-------------------------------------------------------------------*/
+
+/* 2/ Les sélecteurs-------------------------------------------------*/
+
+/*--2.1/ Les sélecteurs basiques-------------------------------*/
+
+/*----2.1.1/ Sélecteur Universel--------------------------*/
+* {
+  /*Règles à appliquer à tous les élément du DOM*/
+}
+/*--------------------------------------------------------*/
+
+/*----2.1.2/ Sélecteur de balise-------------------------*/
+div {
+  /*Règles à appliquer à tous les élément <div> du DOM*/
+}
+/*--------------------------------------------------------*/
+
+/*----2.1.3/ Sélecteur de classe-------------------------*/
+.a {
+  /*Règles à appliquer à tous les éléments aillant pour nom de classe a */
+}
+/*--------------------------------------------------------*/
+
+/*----2.1.4/ Sélecteur d'identifiant---------------------*/
+#a {
+  /*Règles à appliquer à l'élément aillant pour nom identifiant a */
+}
+/*--------------------------------------------------------*/
+
+/*------------------------------------------------------------*/
+
+
+/*--2.2/ Sélecteurs combinateurs------------------------------*/
+
+/*----2.2.1/ Sélecteur de descendants---------------------*/
+div a {
+  /*Règles à appliquer à tous les descendant a des div */
+}
+/*--------------------------------------------------------*/
+
+/*----2.2.2/ Sélecteur d'enfants-------------------------*/
+div > a {
+  /*Règles à appliquer aux enfants a des div */
+}
+/*--------------------------------------------------------*/
+
+/*----2.2.3/ Sélecteur de frères-------------------------*/
+div ~ a {
+  /*Règles à appliquer à tous les a venant à la suite des div */
+}
+/*--------------------------------------------------------*/
+
+/*----2.2.4/ Sélecteur de frère adjacent-----------------*/
+div + a {
+  /*Règles à appliquer à l'élement a venant à la suite des div */
+}
+/*--------------------------------------------------------*/
+
+/*----2.2.5/ Sélecteur 'ou'------------------------------*/
+div,
+a {
+  /*Règles à appliquer aux éléments div ou a */
+}
+/*--------------------------------------------------------*/
+
+/*----2.2.6/ Sélecteur 'et'------------------------------*/
+div.a {
+  /*Règles à appliquer aux éléments div dont la classe est a */
+}
+/*--------------------------------------------------------*/
+
+/*------------------------------------------------------------*/
+
+/*--2.3/ Sélecteurs d'attributs-------------------------------*/
+
+/*----2.3.1/ Possédant l'attribut-------------------------*/
+[a] {
+  /*Règles à appliquer à tous les éléments possédant l'attribut a */
+}
+/*--------------------------------------------------------*/
+
+/*----2.3.2/ Attribut égal à------------------------------*/
+[a="1"] {
+  /*Règles à appliquer à tous les éléments possédant l'attribut a aillant pour valeur 1*/
+}
+/*--------------------------------------------------------*/
+
+/*----2.3.3/ Attribut qui commence par--------------------*/
+[a^="1"] {
+  /*Règles à appliquer à tous les éléments possédant l'attribut a dont valeur commence par 1*/
+}
+/*--------------------------------------------------------*/
+
+/*----2.3.4/ Attribut qui finit par-----------------------*/
+[a$="1"] {
+  /*Règles à appliquer à tous les éléments possédant l'attribut a dont valeur fini par 1*/
+}
+/*--------------------------------------------------------*/
+
+/*----2.3.5/ Attribut contenant une valeur-----------------*/
+[a*="1"] {
+  /*Règles à appliquer à tous les éléments possédant l'attribut a dont valeur contient 1 quelque parts*/
+}
+/*--------------------------------------------------------*/
+
+
+/* 3/ Pseudo classe------------------------------------------------*/
+
+
+/*--3.1/ Etat -------------------------------------------------*/
+
+
+/*----3.1.1/ Souris sur l'élément-------------------------*/
+a:hover {
+  /*Règles à appliquer à tous les élément a quand la souris passe dessus*/
+}
+/*---------------------------------------------------------*/
+
+
+/*----3.1.2/ L'élément est en focus------------------------*/
+a:focus {
+  /*Règles à appliquer à tous les élément a quand la souris passe dessus*/
+}
+/*---------------------------------------------------------*/
+
+/*----3.1.3/ Champs obligatoire----------------------------*/
+a:required {
+  /*Règles à appliquer à tous les élément champs d'utilisateur obligatoire*/
+}
+/*---------------------------------------------------------*/
+
+/*----3.1.4/ Champs sélectionné---------------------------*/
+a:checked {
+  /*Règles à appliquer aux cases à cocher quand elle sont cochées*/
+}
+/*---------------------------------------------------------*/
+
+/*----3.1.5/ Champs désactivé------------------------------*/
+a:diabled {
+  /*Règles à appliquer aux champs désactivé*/
+}
+/*---------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------*/
+
+
+/*--3.2/ Position----------------------------------------------*/
+
+/*----3.2.1/ Premier enfant--------------------------------*/
+a:first-child {
+  /*Règles à appliquer à tous les élément a à la premiere position*/
+}
+/*---------------------------------------------------------*/
+
+/*----3.2.2/ Dernier enfant--------------------------------*/
+a:last-child {
+  /*Règles à appliquer à tous les élément a à la derniere position*/
+}
+/*---------------------------------------------------------*/
+
+/*----3.2.3/ Enfant à la position--------------------------*/
+a:nth-child(2n) {
+  /*Règles à appliquer à tous les élément a dont la position est un nombre pair*/
+}
+/*---------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------*/
+
+/*------------------------------------------------------------------*/
