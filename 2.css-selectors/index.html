@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+            
+    <!--Image afficher dans la barre d'onglet-->
+    <link rel="icon" href="./favicon.ico">
+
+    <!--Titre du site affiché dans la barre d'onglet-->
+    <title>BRAND: Acceuil</title>
+
+    <!--Description du site-->
+    <meta name = "description" content= "Déscription de votre site en quelques mots" >
+    
+    <!-- Image du site-->
+    <meta property="og:image"  content="./images/logo.svg">
+
+    <!--Instructions sur la taille et l’échelle du viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- Voici notre en‑tête principale-->
+    <header>
+      <!-- Titre visible de la page -->
+      <h1>Bienvenue sur BRAND!</h1>
+
+      <!-- Image visible de la page -->
+      <img src="./images/logo.svg" alt="Lettre B en bleu et orange." width="100%"/>
+    
+      <!-- Déscription visible de la page -->
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati soluta rerum quam perspiciatis repudiandae eveniet vero molestiae maxime, veniam expedita, aperiam explicabo alias nisi facilis blanditiis, deserunt veritatis nam dolore.
+      </p>
+    </header>
+
+    <!-- La barre de navigation. -->
+    <nav>
+      <!-- Un contenant pour le logo et la marque. -->
+      <div>
+        <img src="./images/logo.svg" alt="Lettre B en bleu et orange." width="30px"/>
+        <span>BRAND</span>
+      </div>
+
+      <!-- Une liste de liens vers d'autre page ou sections. -->
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Un formulaire de recherche afin de naviguer de façon non‑linéaire.-->
+      <form>
+        <input type="search" name="q" placeholder="Rechercher" />
+        <input type="submit" value="Lancer !" />
+      </form>
+    </nav>
+
+    <!-- Ici nous mettons le contenu de la page -->
+    <main>
+      <!-- La section des articles -->
+      <section id="articles">
+        <!-- Titre de la section des articles -->
+        <h2>Les articles</h2>
+
+        <!-- Un article -->
+        <article id="article1">
+          <h3>Lorem Ipsum, c'est quoi?</h2>
+          <img src="./images/LoremIpsum.png" width="100%" alt="Icon d'une image sur fond gris">
+          <p>
+            La phrase latine "<i>Lorem ipsum dolor sit amet consectetur</i>" est 
+            utilisée depuis le XVIe siècle par des typographes puis par des graphistes 
+            pour visualiser l'espace occupé par un texte et tester les différentes
+            polices de caractères.
+          </p>
+          <p>
+            L'extrait complet
+            
+            <blockquote cite="https://loremipsum.io/fr/">
+              "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, 
+              consectetur, adipisci velit."
+            </blockquote>
+            
+            siginfie
+            <blockquote cite="https://fr.wikipedia.org/wiki/Lorem_ipsum">
+              "Personne n'aime la douleur en elle-même, 
+              ne la recherche et ne la souhaite, 
+              tout simplement parce qu'il s'agit de la douleur."
+            </blockquote>
+        
+          </p>
+        </article>
+        
+        <!--Balise pour ajouter un ligne de séparation -->
+        <hr>
+
+        <!-- Un deuxiemme article -->
+        <article id="article2">
+          <h3>Qui est John Doe ?</h2>
+            <img src="./images/JohnDoe.png" width="100%" alt="Icon d'une image sur fond gris">
+          <p>
+            En anglais, <strong>John Doe</strong> (version féminine : Jane Doe) est 
+            une expression qui désigne <strong>une personne non identifiée</strong>:
+            « Monsieur X », « Monsieur Tout-le-monde ». 
+            Pour les très jeunes enfants, l'équivalent est « Baby Doe », 
+            ou encore « Jonnie Doe » ou « Janie Doe ».
+          </p>
+        </article>
+      </section>
+      
+    <hr>
+
+    <section id="contact">
+      <!-- Titre de la section contact -->
+      <h2>Contactez nous</h2>
+
+        <!-- Formulaire de contact -->
+      <form action="post">
+        <!-- Label et champ pour l'email -->
+        <label for="email">Votre adresse mail: </label>
+        <input id="email" type="email" name="email" placeholder="exemple@exemple.com" />
+
+        <!-- Groupes de choix du sujet-->
+        <fieldset>
+          <!--Legende du groupe de champs -->
+          <legend>Sujet:</legend>
+            
+          <!-- Label et choix pour pour poser une question -->
+          <input type="radio" id="question" name="sujet" value="question" />
+          <label for="question">Vous avez une question?</label>
+
+          <br />    
+
+          <!-- Label et choix pour émettre une réclamation -->
+          <input type="radio" id="reclamation" name="sujet" value="reclamation" />
+          <label for="reclamation">Vous avez une réclamation?</label>
+
+          <br />
+
+          <input type="radio" id="autre" name="sujet" value="autre" />
+          <label for="autre">Autre chose?</label>
+        </fieldset>
+
+        <label for="message">Votre message</label>
+        <br />
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+        <br />
+        
+        <button>Envoyer !</button>
+      </form>
+    </section>
+    </main>
+
+    <!-- Le contenu « à côté »-->
+    <aside>
+      <h2>En relation:</h2>
+      <!-- Liste ordonnés des articles de la page-->
+      <ol>
+        <!-- En relation avec l'article 1-->
+        <li>
+          <!-- Lien vers interne l'article 1-->
+          <a href="#article1">Lorem Ipsum, c'est quoi?</a>
+          <!-- Liste de liens externes en relation avec l'article 1-->
+          <ul>
+            <li>
+            <a href="https://fr.wikipedia.org/wiki/Lorem_ipsum" target="_blank">
+              Lorem ipsum sur Wikipedia
+            </a>
+            </li>
+            <li>
+            <a href="https://loremipsum.io/" target="_blank">
+              Générateur de texte Lorem Ipsum
+            </a>
+            </li>
+          </ul>
+        </li>
+        <!-- En relation avec l'article 2-->
+        <li>
+          <!-- Lien interne vers l'article 2-->
+          <a href="#article2">
+            Qui est John Doe ?
+          </a>
+          <!-- Liste de liens externes en relation avec l'article 2-->
+          <ul>
+            <li>
+            <a href="https://fr.wikipedia.org/wiki/John_Doe" target="_blank">
+              John Doe sur Wikipedia</a>
+            </li>
+            <li>
+            <a href="https://ui-avatars.com/" target="_blank">
+              API générateur d'avatars
+            </a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </aside>
+
+    <!-- Le pied de page utilisé sur toutes les pages -->
+    <footer>
+      <p>©Copyright 2050 par personne. Tous droits reversés.</p>
+    </footer>
+
+    <footer>
+      <p>©Copyright 2050 par personne. Tous droits reversés.</p>
+    </footer>
+  </body>
+</html>
