@@ -8,6 +8,7 @@ Cet article explique ce qu'est le CSS à l'aide d'exemples de syntaxe simple et 
 
 - [CSS: Introduction](https://djemai-samy.com/posts/1.css-introduction.article)
 - [CSS: Les sélecteurs](https://djemai-samy.com/posts/2.css-selectors.article)
+- [CSS: Les boîtes](https://djemai-samy.com/posts/3.css-box.article)
 
 ---
 
@@ -15,5 +16,6 @@ Cet article explique ce qu'est le CSS à l'aide d'exemples de syntaxe simple et 
 
 - [CSS: Introduction](https://github.com/Djemai-Samy/css-initiation/tree/main/1.css-introduction)
 - [CSS: les sélecteurs](https://github.com/Djemai-Samy/css-initiation/tree/main/2.css-selectors)
+- [CSS: les boîtes](https://github.com/Djemai-Samy/css-initiation/tree/main/3.css-box)
 
 ---
