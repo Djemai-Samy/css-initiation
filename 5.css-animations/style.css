@@ -1,0 +1,35 @@
+.square{
+    height:200px;
+    width:200px;
+}
+
+#change-color{
+    animation-name:changeColorAnimation;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes changeColorAnimation{
+    0%{
+        background-color:red;
+    }
+    100%{
+        background-color:blue;
+    }
+}
+
+#move{
+    background-color:purple;
+    animation: moveAnimation 2s infinite cubic-bezier(.77,-0.02,.16,1.01) alternate;
+}
+
+@keyframes moveAnimation{
+    0%{
+        transform: translateX(0) rotate(0deg) scale(1);
+        border-radius: 5px;
+    }
+    100%{
+        transform: translateX(100%) rotate(180deg) scale(0.5);
+        border-radius: 50%;
+    }
+}
